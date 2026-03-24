@@ -727,6 +727,7 @@ B. Helpers
 -------------------------------------------*/
 
 a {
+    font-size: 120%;
     color: #f4b200;
     transition: .3s ease;
 }
@@ -737,6 +738,7 @@ a {
     }
 
 p {
+    font-size:115%;
     line-height: 1.6875rem;
     margin-bottom: 1.875rem;
     color: rgba(0, 0, 0, .5);
