@@ -280,27 +280,27 @@ $(document).ready(function($) {
 
     var $videoPopup = $(".video-popup");
 
-    if ( $videoPopup.length > 0 ) {
+    if ($videoPopup.length > 0) {
         $videoPopup.magnificPopup({
             type: "iframe",
             removalDelay: 300,
             mainClass: "mfp-fade",
             overflowY: "hidden",
             iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
-                '<div class="mfp-close"></div>'+
-                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                '</div>',
+                markup: '<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" frameborder="0" allow="autoplay;页面;fullscreen" allowfullscreen></iframe>' +
+                    '</div>',
                 patterns: {
                     youtube: {
                         index: 'youtube.com/',
-                        id: 'v=',
-                        src: '//www.youtube.com/embed/%id%?autoplay=1'
+                        id: 'v=',                        
+                        src: '//www.youtube.com/embed/%id%?autoplay=1&rel=0&enablejsapi=1'
                     },
                     vimeo: {
                         index: 'vimeo.com/',
                         id: '/',
-                        src: '//player.vimeo.com/video/%id%?autoplay=1'
+                        src: '//player.vimeo.com/video/%id%?autoplay=1&muted=1'
                     },
                     gmaps: {
                         index: '//maps.google.',

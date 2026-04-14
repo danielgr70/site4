@@ -2555,4 +2555,9 @@ E. Template Specific Elements
     html {
         font-size: 18px; /* Subís la base de 16 a 18 */
     }
+
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }    
 }
