@@ -82,6 +82,11 @@ A. Basic Styling
 /*-------------------------------------------
   -- Styling - Colors, Font Size, Font Family
 -------------------------------------------*/
+.btn-social {
+    color: #ad322a;
+    font-size: 20px;
+    margin: 10px;
+}
 
 body {
     color: #191919;
@@ -2504,54 +2509,7 @@ E. Template Specific Elements
     .ts-carousel-centered .owl-nav .owl-prev {
         left: 2.5rem;
     }
-
-
-
-
-
-
-    .social-buttons {
-        display: flex;
-        gap: 20px; /* Más espacio entre botones */
-        padding: 15px;
-    }
-
-    .btn-social {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* Aumentamos de 40px a 55px */
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        color: white;
-        text-decoration: none;
-        /* El ícono más grande (de 20px a 26px) */
-        font-size: 22px;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    /* Colores un poco más intensos para que resalten */
-    .fb {
-        background-color: #c62828;
-    }
-
-    .ig {
-        background-color: #e53935;
-    }
-
-    .yt {
-        background-color: #b71c1c;
-    }
-
-    /* Efecto Hover: se agrandan un toque más al pasar el mouse */
-    .btn-social:hover {
-        transform: scale(1.15);
-        filter: brightness(1.1);
-        box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-    }
-
+    
     html {
         font-size: 18px; /* Subís la base de 16 a 18 */
     }
@@ -2559,5 +2517,7 @@ E. Template Specific Elements
     button:disabled {
         opacity: 0.5;
         cursor: not-allowed;
-    }    
+    }
+
+    
 }
