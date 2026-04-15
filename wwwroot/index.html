@@ -65,8 +65,8 @@
                     <div class="col-md-6 d-flex flex-column align-items-center">
                         <!--<h1 data-animate="ts-fadeInUp" class="text-center">אורית גרושטיין</h1>-->
                         <!--<img src="assets/img/orit-logo.png" style="height:auto">-->
-                        <img src="assets/img/orit-logo.png" alt="Orit Logo" style="max-width: 60%; max-height:60%; height:auto; width:auto">
-                        <h2 data-animate="ts-fadeInUp" class="text-right">מאמנת לשינוי, להגשמה ולחיים עם משמעות – בעסק ובנשמה</h2>
+                        <img src="assets/img/orit-logo.png" alt="Orit Logo" style="max-width: 80%; max-height:80%; height:auto; width:auto">
+                        <!--<h2 data-animate="ts-fadeInUp" class="text-right">מאמנת לשינוי, להגשמה ולחיים עם משמעות – בעסק ובנשמה</h2>-->
                         <div data-animate="ts-fadeInUp" data-delay="1s">
                             <!--<p class="w-75 mb-5 ts-opacity__50">שיטה יחודית לאימון אישי מבוסס על חוכמת בורס</p>-->
                             <!--<h2 data-animate="ts-fadeInUp">מאמנת לשינוי, להגשמה ולחיים עם משמעות – בעסק ובנשמה.</h2>-->
@@ -267,7 +267,7 @@
             <section id="numbers" class="ts-block ts-separate-bg-element py-5 ts-xs-text-center" data-bg-image="assets/img/bg-field.jpg" data-bg-image-opacity=".1" data-bg-color="#eeeeee" data-bg-parallax="scroll" data-bg-parallax-speed="3">
                 <div class="container">
                     <div class="ts-promo-numbers py-5">
-                        <div class="row">
+                        <div class="row justify-content-center">
                             <div class="col-sm-6 col-md-3">
                                 <div class="ts-promo-number text-center">
                                     <h2 class="ts-opacity__60">16+</h2>
@@ -431,23 +431,25 @@
             <section id="subscribe" class="ts-block ts-separate-bg-element ts-background-repeat py-5" data-bg-image="assets/img/pattern-topo.png" data-bg-image-opacity=".05" data-bg-color="#faf9f6">
                 <div class="container py-2 text-right" dir="rtl">
                     <div class="offset-lg-1 col-lg-10">
-                        <h3>תצטרף לרשימת הדיוור</h3>
-                        <form action="https://api.web3forms.com/submit" method="POST">
+                        <h3>להצטרף לרשימת הדיוור</h3>                       
+                        <form id="form-subscribe" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="5487ae45-7237-49b6-b0bd-901bfb27f450">
+                            <input type="hidden" name="name" value="רוצה להצטרף">
+
                             <div class="row">
                                 <div class="col-md-10">
-                                    <input type="hidden" name="access_key" value="5487ae45-7237-49b6-b0bd-901bfb27f450">
-                                    <input type="hidden" name="name" value="רוצה להצטרף">
-                                    <input type="email" name="email" class="form-control ts-border-radius__pill" id="email-subscribe" aria-describedby="subscribe" placeholder='דוא"ל' required>
+                                    <div class="form-group mb-2">
+                                        <input type="email" name="email" class="form-control" placeholder='דוא"ל שלך' required>
+                                    </div>
                                     <div class="form-check text-right" dir="rtl">
-                                        <input class="form-check-input" type="checkbox" id="consentCheckbox" required>
-                                        <label class="form-check-label mr-3" for="consentCheckbox">
+                                        <input id="consentCheckbox" class="form-check-input" type="checkbox" name="consent">
+                                        <label class="form-check-label mr-4" for="consent-check">
                                             אני מאשר/ת קבלת תכנים ודיוור שיווקי מאורית
                                         </label>
                                     </div>
-                                    <!--<textarea name="message" required></textarea>-->
                                 </div>
                                 <div class="col-md-2">
-                                    <button type="submit" id="btn-submit" class="btn btn-primary w-100">שלח</button>
+                                    <button id="btn-submit" type="submit" class="btn btn-primary w-100">שלח</button>
                                 </div>
                             </div>
                         </form>
@@ -593,80 +595,81 @@
         <!--************ FOOTER *************************************************************************************-->
         <!--*********************************************************************************************************-->
         <footer id="ts-footer" dir="rtl">
-            <div class="map ts-height__400px" id="map"></div>
-            <section id="contact" class="ts-separate-bg-element" data-bg-image="assets/img/bg-clouds-short.jpg" data-bg-image-opacity=".2" data-bg-color="#e58450">
+            <!--<div class="map ts-height__400px" id="map"></div>-->
+            <section id="contact" class="ts-separate-bg-element pt-5" data-bg-image="assets/img/bg-clouds-short.jpg" data-bg-image-opacity=".2" data-bg-color="#e58450">
                 <div class="container">
-                    <div class="ts-box mb-0 p-5 ts-mt__n-10" data-animate="ts-fadeInUp">
-                        <div class="row">
-                            <div class="col-md-4 text-right">
-                                <h3>צור קשר</h3>
-                                <address>
-                                    <br>
-                                    <figure>
-                                        <div class="font-weight-bold">דוא"ל:</div>
-                                        <a href="#">oritgrossztein@gmail.com</a>
-                                    </figure>
-                                    <figure>
-                                        <div class="font-weight-bold">טלפון:</div>
-                                        052-3003411
-                                    </figure>
-                                    <div class="font-weight-bold">פייסבוק:</div>
-                                    <a href="https://www.facebook.com/coach.orit" target="_blank">https://www.facebook.com/coach.orit</a>
-                                </address>
-                                <!--end address-->
+                    
+                    <div class="ts-box mb-0 p-5 mt-1" data-animate="ts-fadeInUp">
+                            <div class="row">
+                                <div class="col-md-4 text-right">
+                                    <h3>צור קשר</h3>
+                                    <address>
+                                        <br>
+                                        <figure>
+                                            <div class="font-weight-bold">דוא"ל:</div>
+                                            <a href="#">oritgrossztein@gmail.com</a>
+                                        </figure>
+                                        <figure>
+                                            <div class="font-weight-bold">טלפון:</div>
+                                            052-3003411
+                                        </figure>
+                                        <div class="font-weight-bold">פייסבוק:</div>
+                                        <a href="https://www.facebook.com/coach.orit" target="_blank">https://www.facebook.com/coach.orit</a>
+                                    </address>
+                                    <!--end address-->
+                                </div>
+                                <!--end col-md-4-->
+                                <div class="col-md-8 text-right">
+                                    <h3>תופס יצירת קשר</h3>
+                                    <!--<form id="form-contact" method="post" class="clearfix ts-form ts-form-email ts-inputs__transparent" data-php-path="assets/php/email.php">-->
+                                    <form id="form-contact" action="https://api.web3forms.com/submit" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="hidden" name="access_key" value="5487ae45-7237-49b6-b0bd-901bfb27f450">
+                                                    <label for="form-contact-name">שם *</label>
+                                                    <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="השם שלך" required>
+                                                </div>
+                                                <!--end form-group -->
+                                            </div>
+                                            <!--end col-md-6 col-sm-6 -->
+                                            <div class="col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="form-contact-email">דוא"ל *</label>
+                                                    <input type="email" class="form-control" id="form-contact-email" name="email" placeholder='הדוא"ל שלך' required>
+                                                </div>
+                                                <!--end form-group -->
+                                            </div>
+                                            <!--end col-md-6 col-sm-6 -->
+                                        </div>
+                                        <!--end row -->
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form-contact-message">הודעה *</label>
+                                                    <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="ההודעה שלך" required></textarea>
+                                                </div>
+                                                <!--end form-group -->
+                                            </div>
+                                            <!--end col-md-12 -->
+                                        </div>
+                                        <!--end row -->
+                                        <div class="form-group clearfix">
+                                            <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">שלך הודעה</button>
+                                        </div>
+                                        <!--end form-group -->
+                                        <div class="form-contact-status"></div>
+                                    </form>
+                                    <!--end form-contact -->
+                                </div>
                             </div>
-                            <!--end col-md-4-->
-                            <div class="col-md-8 text-right">
-                                <h3>תופס יצירת קשר</h3>
-                                <!--<form id="form-contact" method="post" class="clearfix ts-form ts-form-email ts-inputs__transparent" data-php-path="assets/php/email.php">-->
-                                <form id="form-contact" action="https://api.web3forms.com/submit" method="POST">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <input type="hidden" name="access_key" value="5487ae45-7237-49b6-b0bd-901bfb27f450">
-                                                <label for="form-contact-name">שם *</label>
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="השם שלך" required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form-contact-email">דוא"ל *</label>
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder='הדוא"ל שלך' required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form-contact-message">הודעה *</label>
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="ההודעה שלך" required></textarea>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-12 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="form-group clearfix">
-                                        <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">שלך הודעה</button>
-                                    </div>
-                                    <!--end form-group -->
-                                    <div class="form-contact-status"></div>
-                                </form>
-                                <!--end form-contact -->
-                            </div>
+                            <!--end row-->
                         </div>
-                        <!--end row-->
+                        <!--end ts-box-->
+                        <div class="text-center text-white py-4">
+                            <small>© 2026 DGW, All Rights Reserved</small>
+                        </div>
                     </div>
-                    <!--end ts-box-->
-                    <div class="text-center text-white py-4">
-                        <small>© 2026 DGW, All Rights Reserved</small>
-                    </div>
-                </div>
                 <!--end container-->
             </section>
         </footer>
@@ -747,18 +750,7 @@
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <!--<script>
-        const checkbox = document.getElementById('consentCheckbox');
-        const boton = document.getElementById('btn-submit');
 
-        checkbox.addEventListener('change', function () {
-            if (this.checked) {
-                boton.disabled = false; // Lo prende
-            } else {
-                boton.disabled = true;  // Lo apaga
-            }
-        });
-    </script>-->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var checkbox = document.getElementById('consentCheckbox');
