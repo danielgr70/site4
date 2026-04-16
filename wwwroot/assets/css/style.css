@@ -743,7 +743,7 @@ a {
     }
 
 p {
-    font-size:115%;
+    font-size: 115%;
     line-height: 1.6875rem;
     margin-bottom: 1.875rem;
     color: rgba(0, 0, 0, .5);
@@ -2509,7 +2509,7 @@ E. Template Specific Elements
     .ts-carousel-centered .owl-nav .owl-prev {
         left: 2.5rem;
     }
-    
+
     html {
         font-size: 18px; /* Subís la base de 16 a 18 */
     }
@@ -2518,6 +2518,4 @@ E. Template Specific Elements
         opacity: 0.5;
         cursor: not-allowed;
     }
-
-    
 }
