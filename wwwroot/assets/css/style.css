@@ -2519,3 +2519,31 @@ E. Template Specific Elements
         cursor: not-allowed;
     }
 }
+
+.texto-bio {
+    white-space: pre-line; /* Este es el truco mágico */
+    line-height: 1.6; /* De paso le damos aire para que sea "delicado" */
+}
+
+.contenedor-scroll {
+    /* Calculamos la altura: line-height * cantidad de líneas */
+    line-height: 1.5em;
+    height: 4.5em; /* 1.5 x 3 líneas = 4.5em */
+
+    overflow-y: auto; /* Activa el scroll vertical */
+    padding-right: 10px; /* Espacio para que la barra no tape el texto */
+    /* Esto mantiene los puntos suspensivos visibles mientras scrolleás */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+    /* Opcional: Personalizar la barra de scroll para que sea sutil */
+    .contenedor-scroll::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .contenedor-scroll::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+    }
