@@ -172,7 +172,7 @@ $(document).ready(function($) {
             var loop = parseInt( $(this).attr("data-owl-loop"), 2);
             if( !loop ) loop = 0;
 
-            var margin = parseInt( $(this).attr("data-owl-margin"), 2);
+            var margin = parseInt( $(this).attr("data-owl-margin"), 10);
             if( !margin ) margin = 0;
 
             var autoWidth = parseInt( $(this).attr("data-owl-auto-width"), 2);
