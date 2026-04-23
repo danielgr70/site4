@@ -84,7 +84,7 @@ A. Basic Styling
 -------------------------------------------*/
 .btn-social {
     color: #ad322a;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 10px;
 }
 
@@ -111,7 +111,7 @@ h1, .ts-h1 {
 }
 
 h2, .ts-h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem;    
 }
 
 h3, .ts-h3 {
@@ -120,7 +120,7 @@ h3, .ts-h3 {
 }
 
 h4, .ts-h4 {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.3rem;
 }
 
 h5, .ts-h5 {
@@ -1423,7 +1423,7 @@ form.ts-labels-inside-input .form-group,
 }
 
 .ts-item-header {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.2625rem;
     position: relative;
 }
 
@@ -2415,7 +2415,7 @@ E. Template Specific Elements
     }
 
     .ts-title {
-        margin-bottom: 3.125rem;
+        margin-bottom: 2.525rem;
     }
 
     .ts-block-inside {
