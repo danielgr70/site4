@@ -2348,8 +2348,8 @@ E. Template Specific Elements
     }
 
     .ts-block {
-        padding-bottom: 8.125rem;
-        padding-top: 8.125rem;
+        padding-bottom: 4.125rem;
+        padding-top: 4.125rem;
     }
 
     .ts-card__image {
