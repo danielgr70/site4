@@ -2539,3 +2539,55 @@ E. Template Specific Elements
             background: #ccc;
             border-radius: 10px;
         }
+
+
+/* Convertimos el modal en un Slide-in */
+.modal.side-popup .modal-dialog {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0;
+    width: 350px; /* Un ancho discreto */
+    transition: transform 0.3s ease-out;
+}
+
+/* Sacamos el fondo oscuro (backdrop) para que no moleste */
+.modal-backdrop.side-popup-backdrop {
+    display: none !important;
+}
+
+/* Animación de entrada desde la derecha */
+.modal.side-popup.fade .modal-dialog {
+    transform: translateX(100%);
+}
+
+.modal.side-popup.show .modal-dialog {
+    transform: translateX(0);
+}
+
+.side-popup.modal {
+    pointer-events: none; /* Los clicks "pasan de largo" del div grande */
+    background: none !important; /* Nos aseguramos de que no haya fondo */
+}
+
+/* Re-habilitar clicks solo dentro del cuadradito del popup */
+.side-popup .modal-content {
+    pointer-events: auto; /* Para que el botón de la oferta SÍ se pueda cliquear */
+}
+
+/* Ajuste para que no se mueva el scrollbar al abrirse */
+body.modal-open {
+    padding-right: 0 !important;
+    overflow-y: auto !important;
+}
+
+.side-popup .modal-content {
+    /* Una sombra elegante: un poco hacia abajo y bien difusa */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    /* Un borde casi imperceptible para definir el límite */
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    /* Aseguramos que las esquinas sigan redondeadas */
+    border-radius: 15px;
+    /* Importante: para que el blanco resalte */
+    background-color: #ffffff;
+}
